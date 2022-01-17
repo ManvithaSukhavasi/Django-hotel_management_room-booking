@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'hotelapp/base.html' %}
+{% block body_block %}
+{% load static %}
+<head>
+<title>Room Detail</title>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="{% static "css/room_detail.css" %}">
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Room Image -->
+        <div class="Image">
+            <img src="https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+
+        </div>
+        <!-- Room Details -->
+        <div class="room"><br><br><br>
+            <!-- Div:1 Back to Home -->
+            <div class="home">
+                 <a href="/room_list"><i class="fa fa-arrow-circle-left">Home</i></a>
+            </div>
+            <!-- Div:2 Room Information -->
+            <div class="room-info">
+                <h1>{{room_category}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis eos animi ab esse voluptatibus enim! Facere, commodi quos dignissimos perspiciatis expedita quod, libero quam sequi asperiores, quidem autem eos.</p>
+
+
+            </div>
+            <!-- Div:3 Room Booking Form -->
+            <form id="booking-form" action="" method="POST">
+
+                {% csrf_token %}
+
+                 <!-- Input Div -->
+                <div class="input-div">
+                    <label for="id_check_in">Check In</label>
+                    <input type="datetime-local" id="id_check_in" name="check_in">
+                </div>
+               <!-- Input Div -->
+                  <div class="input-div">
+                    <label for="id_check_out">Check Out</label>
+                    <input type="datetime-local" id="id_check_out" name="check_out">
+                      
+                  </div><br><br>
+               <!-- Input Div -->
+               <div class="input-div">
+                   <button type="submit">Book THe Room</button>
+                </div>
+            </form>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+{% endblock %}

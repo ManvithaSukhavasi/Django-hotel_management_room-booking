@@ -1,0 +1,99 @@
+/* Root css */
+
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(140, 15, 223);
+    color:rgb(228, 13, 228);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.25;
+    height: 100vh;
+}
+
+/* Main Div */
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+}
+
+.image{
+    flex: 0.2;
+    
+}
+
+.room{
+    flex: 0.5;
+    margin: 2rem;
+    display: flex;
+    text-align: left;
+    align-items: start;
+    flex-direction: column;
+}
+
+/* Sub Divs */
+.home{
+    flex: 0.2;
+}
+
+.room-info{
+    flex: 0.4;
+    margin: 5rem 1rem;
+
+}
+
+form{
+    display: flex;
+    flex: 0.4 1 auto;
+    flex-direction:column;
+}
+
+/* Inside Sub Divs */
+.image img{
+    flex:1;
+    max-height: 99.2vh;
+}
+    
+
+i{
+    color: mistyrose;
+    font-size: 2rem;
+}
+
+/* Form's Css */
+.input-div{
+    flex: 1 auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input.button{
+    flex: 1;
+    width: 400px;
+    border-radius: 00.5rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: navy;
+}
+button{
+    background-color: rgb(0, 26, 255);
+    color: whitesmoke;
+    outline: none;
+}
+
+button:hover{
+    color: rgb(238, 130, 130);
+    background-color:rgb(111, 71, 255)
+}
+
+
+

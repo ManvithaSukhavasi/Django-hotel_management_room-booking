@@ -1,0 +1,64 @@
+/* Root css */
+
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:cadetblue;
+    color:cyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.25;
+}
+
+/* Brand css */
+
+brand{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+
+/* Main Div */
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* Room Divs */
+.room{
+    max-width: 20%;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: darkmagenta;
+    flex: 1;
+}
+
+.room:hover{
+    background-color: mediumaquamarine;
+}
+
+/* Inside Room Divs */
+
+h2{
+    margin: 0.25rem;
+}
+
+a{
+    text-decoration: none;
+    color: mediumturquoise;
+}
+
+img{
+    max-width: 90%;
+}
